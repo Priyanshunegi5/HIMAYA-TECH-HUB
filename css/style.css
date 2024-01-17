@@ -1018,3 +1018,8 @@ body:after {
     color: #888888; }
     .footer a:hover {
       color: #000; }
+
+
+.logo{
+  height: 50px;
+}
