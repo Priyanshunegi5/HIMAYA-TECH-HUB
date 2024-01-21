@@ -439,6 +439,12 @@
     </section>
 
 
+
+
+
+    <!-- contact form starts here ...! -->
+
+
     <section class="site-section" id="contact-section">
       <div class="container">
         <div class="row">
@@ -448,7 +454,7 @@
         </div>
         <div class="row justify-content-between">
           <div class="col-lg-6">
-            <form action="#" class="form">
+            <form action="#" class="form " onsubmit="sendemail()">
               <div class="row mb-4">
                 <div class="form-group col-6">
                   <input type="text" class="form-control" placeholder="First name">
@@ -484,8 +490,10 @@
               </div>
 
             </form>
+
+
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5 mt-5">
             <h3>London</h3>
             <ul class="list-unstyled mb-5">
               <li class="mb-3">
@@ -609,31 +617,27 @@
 
 
   <script>
-    Email.server = {
-      Host: "smtp.your-email-provider.com",
-      Username: "your-email@example.com",
-      Password: "your-email-password",
-      Secure: true,
-      Port: 587,
-    };
 
-    // Function to send email
-    function sendEmail() {
-      Email.send({
-        SecureToken: "your-secure-token", // Generate this on SMTP.js website
-        To: 'recipient@example.com',
-        From: 'your-email@example.com',
-        Subject: 'Subject of your email',
-        Body: 'Content of your email',
-      }).then(
-        message => alert(message)
-      );
-    }
+function sendemail(){
+
+
+
+    Email.send({
+      Host: "smtp.elasticemail.com",
+      Username: "username",
+      Password: "password",
+      To: 'them@website.com',
+      From: "you@isp.com",
+      Subject: "This is the subject",
+      Body: "And this is the body"
+
+
+    }).then(
+      message => alert(message)
+    );
+
+  }
   </script>
-
-  <button onclick="sendEmail()">Send Email</button>
-
-
 
 
 
