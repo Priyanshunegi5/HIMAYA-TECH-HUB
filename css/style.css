@@ -1,4 +1,19 @@
 /* Base */
+
+.site-mobile-menu .site-nav-wrap-hack {
+  list-style:  none;
+  padding: 10px;
+}
+
+.site-mobile-menu a {
+  color: black;
+}
+
+.site-mobile-menu a:hover {
+  color: red;
+}
+
+
 html {
   overflow-x: hidden; }
 
