@@ -70,7 +70,7 @@
                 <li><a href="/services.html" class="nav-link">Services</a></li>
 
                 <li><a href="/blog.html" class="nav-link">Blog</a></li>
-                <li><a href="/contact.html" class="nav-link">Coct</a></li>
+                <li><a href="/contact.html" class="nav-link">Coctact</a></li>
               </ul>
             </nav>
 
@@ -368,25 +368,29 @@
         <div class="owl-carousel slide-one-item">
           <div class="slide">
             <blockquote>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-                ocean.</p>
-              <p><cite>&mdash; Jean Smith</cite></p>
+              <p>
+                Exceptional service from IDE3! Their IT strategy consulting has transformed our business operations,
+                earning them a well-deserved 5-star rating from 29 satisfied customers
+              </p>
+              <p><cite>&mdash; Aditya roy </cite></p>
             </blockquote>
           </div>
           <div class="slide">
             <blockquote>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              <p><cite>&mdash; Carl Spencer</cite></p>
+              <p>
+                Outsource Bigdata is a top-notch IT services provider, delivering outstanding results. Their expertise
+                places them among the best IT companies, leaving clients highly impressed
+              </p>
+              <p><cite>&mdash; Isha singh</cite></p>
             </blockquote>
           </div>
           <div class="slide">
             <blockquote>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life
-                One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World
-                of Grammar.</p>
-              <p><cite>&mdash; Ryan Peters</cite></p>
+              <p>
+                Tech Monarch in India stands out with its stellar IT support. While they have no reviews yet, their
+                reputation and service quality are promising, making them a potential go-to for IT solutions
+              </p>
+              <p><cite>&mdash; Priyanshi Sharma</cite></p>
             </blockquote>
           </div>
         </div>
@@ -457,45 +461,44 @@
         </div>
         <div class="row justify-content-between">
           <div class="col-lg-6">
-            <form action="#" class="form " onsubmit="sendemail()">
+            <form action="#" class="form ">
               <div class="row mb-4">
                 <div class="form-group col-6">
-                  <input type="text" class="form-control" placeholder="First name">
+                  <input type="text" id="fname" class="form-control" placeholder="First name">
                 </div>
                 <div class="form-group col-6">
-                  <input type="text" class="form-control" placeholder="Full name">
+                  <input type="text" id="lname" class="form-control" placeholder="Last name">
                 </div>
               </div>
 
               <div class="row mb-4">
                 <div class="form-group col-12">
-                  <input type="email" class="form-control" placeholder="Email address">
+                  <input type="email" id="email" class="form-control" placeholder="Email address">
                 </div>
               </div>
 
               <div class="row mb-4">
                 <div class="form-group col-12">
-                  <input type="text" class="form-control" placeholder="Subject of the message">
+                  <input type="text" id="message" class="form-control" placeholder="Subject of the message">
                 </div>
               </div>
 
               <div class="row mb-4">
                 <div class="form-group col-12">
-                  <textarea name="" id="" cols="30" rows="10" class="form-control"
-                    placeholder="Type your message here.."></textarea>
+                  <textarea name="" id="contact" cols="30" rows="10" class="form-control"
+                    placeholder=" Contact no"></textarea>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-md-6">
-                  <input type="submit" class="btn btn-primary" value="Send Message">
+                  <input type="submit" id="submit" class="btn btn-primary" value="Send Message">
                 </div>
               </div>
 
             </form>
-
-
           </div>
+
           <div class="col-lg-5 mt-5">
 
             <h3>Dheradun</h3>
@@ -517,6 +520,26 @@
         </div>
       </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./index.js"></script>
+
+
+
+    <!-- contact form ends here -->
+
+
+
+
 
     <footer class="site-section bg-light footer">
       <div class="container">
@@ -596,32 +619,6 @@
 
 
   <!-- smpt connection starts here ...! -->
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-
-  <script>
-
-    function sendemail() {
-
-
-
-      Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "username",
-        Password: "password",
-        To: 'them@website.com',
-        From: "you@isp.com",
-        Subject: "This is the subject",
-        Body: "And this is the body"
-
-
-      }).then(
-        message => alert(message)
-      );
-
-    }
-  </script>
-
 
 
 
